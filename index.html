@@ -21,10 +21,23 @@
 			height: 100%;
 			padding-top: 50px;
 		}
-
-
-
     </style>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="./css/layout-mobile.css" media="all">
+<link rel="stylesheet" type="text/css" href="./css/layout-desktop.css" media="all and (min-width: 800px)">
+
+
+<script>
+// $(document).ready(function(){
+// // load the map
+// $.getScript('./js/load-map.js');
+// });
+</script>
+
+
 <body>
 
 <!-- Bootstrap navbar -->
@@ -74,24 +87,60 @@
           </ul>
         </div><!--/.nav-collapse -->
       </div>
-    </nav>
+</nav>
+
 
      
+<div id="sidebar-menu">
+      <div id="sidebar-menu-content">
+        <!-- <a href="#" id="close-menu"><i class="fa fa-times-circle"></i></a> -->
+        
+        <div id="destinations" class="sidebar-section">
+          <!-- <h2>Destinations</h2> -->
+            <a href="#" id="select-location" class="map-button">Select a Location</a>
+        <div id="destinations-list">
+        <ul>
+        <li><a href="#">one</a></li>
+        <li><a href="#">two</a></li>
+        <li><a href="#">three</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="layer-controls" class="sidebar-section">
+    <h2><a href="#overlay-layer-controls" class="section-toggle toggle-show">Map Layers</a></h2>
+          <div id="overlay-layer-controls" class="legend-section"></div>
+  </div>
+
+<div id="links">
+  <ul>
+    <li><a href="http://www.colorado.edu/about/visiting-campus/directions"><i class="fa fa-arrows fa-fw"></i> Directions to Campus</a></li>
+
+    <li><a href="#embed" id="embed-link"><i class="fa fa-code fa-fw"></i> Embed this Map</a></li>
+    <li><a href="about/new-map"><i class="fa fa-question-circle fa-fw"></i> About the Map</a></li>
+    <li><a href="lib/map.pdf"><i class="fa fa-print fa-fw"></i> Printable Map (pdf)</a></li>
+    <li><a href="about/feedback"><i class="fa fa-thumbs-up fa-fw"></i> Feedback</a></li>
+  </ul>
+</div>
+
+<div id="sidebar-button"></div>
+</div>
+</div>
+
+<div id="map"></div>
+
+<div id="embed">
+<h2>Embed Map</h2>
+<p>Copy and paste the code below to embed this map on your own site:</p>
+<input type="text" id="embed-code" /> <a href="#" id="close-embed"><i class="fa fa-times-circle"></i></a>
+</div>
 
 
-<!-- <div class="map-container-fluid">
-	<div class="map-row">
-		<div class="col-md-12"> -->
-			<div id="map"></div>
-		<!-- </div>
-	</div>
-</div> -->
 
+</body>
 
 
 <!-- the javascript files -->
-
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
@@ -99,24 +148,20 @@
 
 
 <script>
-        var map = L.map('map', {
-        	zoomControl: false,
-        	center: [-41.2858, 174.78682],
-        	zoom: 14
-        });
-        
-        mapLink = 
-            '<a href="http://openstreetmap.org">OpenStreetMap</a>';
-        L.tileLayer(
-            'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; ' + mapLink + ' Contributors',
-            maxZoom: 18,
-            }).addTo(map);
-        new L.Control.Zoom({ position: 'bottomright'}).addTo(map);
-    </script>
+var map = L.map('map', {
+zoomControl: false,
+center: [-41.2858, 174.78682],
+zoom: 14
+});
 
+mapLink = 
+'<a href="http://openstreetmap.org">OpenStreetMap</a>';
+L.tileLayer(
+'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+attribution: '&copy; ' + mapLink + ' Contributors',
+maxZoom: 18,
+}).addTo(map);
+new L.Control.Zoom({ position: 'bottomright'}).addTo(map);
+</script>
 
-
-    
-</body>
 </html>
