@@ -160,6 +160,7 @@ h3{ font-size: 15px; }
 }
 */
 
+
 .leaflet-top.leaflet-left {
 }
 .leaflet-top.leaflet-left .leaflet-control-geocoder {
@@ -232,7 +233,7 @@ div.leaflet-top.leaflet-right .leaflet-control-layers-toggle {
 */
 
 .leaflet-right {
-  right: auto;
+  /* right: auto; */ /* psm */
   left:45px;
 }
 
