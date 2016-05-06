@@ -2,8 +2,8 @@
 <html>
 <head>
 	<title>100% Leaflet Bootstrap Template</title>
-</head>
-<!-- the CSS files -->
+
+	<!-- the CSS files -->
 <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
@@ -28,13 +28,15 @@
 
 <link rel="stylesheet" type="text/css" href="./css/layout-mobile.css" media="all">
 <link rel="stylesheet" type="text/css" href="./css/layout-desktop.css" media="all and (min-width: 800px)">
+</head>
+
 
 
 
 
 
 <body>
-
+<div id="page">
 <!-- Bootstrap navbar -->
 <div id="header-bar">
 <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -92,7 +94,7 @@
       <div id="sidebar-menu-content">
         <!-- <a href="#" id="close-menu"><i class="fa fa-times-circle"></i></a> -->
         
-<div id="destinations" class="sidebar-section">
+        <div id="destinations" class="sidebar-section">
           <!-- <h2>Destinations</h2> -->
             <a href="#" id="select-location" class="map-button">Select a Location</a>
             <div id="destinations-list">
@@ -119,161 +121,118 @@
                 <li><a href="BUCK">Buckingham Hall</a></li>
                 <li><a href="W-BF">Business Field</a></li>
                 <li><a href="KOBL">Business, Leeds School of Business, BUS</a></li>
-                <li><a href="UMC">CU Book Store</a></li>
-                <li><a href="MAIN">CU Heritage Center</a></li>
-                <li><a href="CARL">Carlson Gymnasium</a></li>
-                <li><a href="CAS">Center for Asian Studies</a></li>
-                <li><a href="CASA">Center for Astrophysics and Space Astronomy</a></li>
-                <li><a href="c4c">Center for Community</a></li>
-                <li><a href="URES">Chancellor's Residence,PRES,President's Residence</a></li>
-                <li><a href="CHEY">Cheyenne Arapaho Hall</a></li>
-                <li><a href="CLRE">Clare Small Arts and Sciences</a></li>
-                <li><a href="CKRL">Cockerell Hall</a></li>
-                <li><a href="CICC">College Inn</a></li>
-                <li><a href="COMP">Computing Center</a></li>
-                <li><a href="CEDU">Continuing Education</a></li>
-                <li><a href="CIRE">Cooperative Institute for Research in Environmental Sciences</a></li>
-                <li><a href="EVNT">Coors Events/Conference Center</a></li>
-                <li><a href="CHEM">Cristol Chemistry and Biochemistry</a></li>
-                <li><a href="CROS">Crosman Hall</a></li>
-                <li><a href="DALW">Dal Ward Athletic Center</a></li>
-                <li><a href="W-TF">Dalton Trumbo Fountain Court</a></li>
-                <li><a href="DLYC">Darley Commons</a></li>
-                <li><a href="DLYT">Darley Towers</a></li>
-                <li><a href="DEN">Denison Arts and Sciences</a></li>
-                <li><a href="DLC">Discovery Learning Center</a></li>
-                <li><a href="DUAN">Duane Physics and Astrophysics</a></li>
-                <li><a href="HUMN">Eaton Humanities</a></li>
-                <li><a href="ECON">Economics</a></li>
-                <li><a href="EDUC">Education</a></li>
-                <li><a href="EKLC">Ekeley Sciences</a></li>
-                <li><a href="EC">Engineering Center</a></li>
-                <li><a href="ENVD">Environmental Design</a></li>
-                <li><a href="EHSC">Environmental Health and Safety Center </a></li>
-                <li><a href="EPRK">Euclid Avenue AutoPark</a></li>
-                <li><a href="FACT">Faculty-Staff Court</a></li>
-                <li><a href="DACR">Family Housing Children's Center - Newton Court</a></li>
-                <li><a href="W-FA">Farrand Field</a></li>
-                <li><a href="FRND">Farrand Hall</a></li>
-                <li><a href="FISK">Fiske Planetarium and Science Center</a></li>
-                <li><a href="FLMG">Fleming Building</a></li>
-                <li><a href="STAD">Folsom Field</a></li>
-                <li><a href="W-FR">Franklin Field</a></li>
-                <li><a href="W-GT">Gamow Tower</a></li>
-                <li><a href="COTT">Gates Woodruff Women's Studies Cottage</a></li>
-                <li><a href="GOLD">Gold Biosciences Building</a></li>
-                <li><a href="GRNS">Grounds and Recycling</a></li>
-                <li><a href="GUGG">Guggenheim Geography</a></li>
-                <li><a href="HALE">Hale Science</a></li>
-                <li><a href="HLET">Hallett Hall</a></li>
-                <li><a href="HPHY">Health Physics Laboratory</a></li>
-                <li><a href="HLMS">Hellems Arts and Sciences</a></li>
-                <li><a href="HSMC">Housing System Maintenance Center</a></li>
-                <li><a href="HSSC">Housing System Service Center</a></li>
-                <li><a href="HUMN">Humanities</a></li>
-                <li><a href="MUS">Imig Music</a></li>
-                <li><a href="IBG">Institute for Behavioral Genetics </a></li>
-                <li><a href="IBS">Institute of Behavioral Science </a></li>
-                <li><a href="IBS2">Institute of Behavioral Science No. 02</a></li>
-                <li><a href="IBS4">Institute of Behavioral Science No. 04 </a></li>
-                <li><a href="IBS6">Institute of Behavioral Science No. 06</a></li>
-                <li><a href="IBS7">Institute of Behavioral Science No. 07 </a></li>
-                <li><a href="IBS9">Institute of Behavioral Science No. 09</a></li>
-                <li><a href="IB10">Institute of Behavioral Science No. 10</a></li>
-                <li><a href="ITLL">Integrated Teaching and Learning Laboratory</a></li>
-                <li><a href="IEC">International English Center</a></li>
-                <li><a href="JILA">JILA</a></li>
-                <li><a href="BIOT">Jennie Smoly Caruthers Biotec Building</a></li>
-                <li><a href="KTCH">Ketchum Arts and Sciences</a></li>
-                <li><a href="KCEN">Kittredge Central</a></li>
-                <li><a href="W-KF">Kittredge Field</a></li>
-                <li><a href="KITW">Kittredge West Hall</a></li>
-                <li><a href="KOBL">Koelbel Building</a></li>
-                <li><a href="ALUM">Koenig Alumni Center</a></li>
-                <li><a href="LSTR">LASP Space Technology Research Center</a></li>
-                <li><a href="LESS">Lesser House</a></li>
-                <li><a href="LIBY">Libby Hall</a></li>
-                <li><a href="MAC">MacAllister Building</a></li>
-                <li><a href="MCKY">Macky Auditorium</a></li>
-                <li><a href="MRCT">Marine Court</a></li>
-                <li><a href="W-MR">Mary Rippon Theatre</a></li>
-                <li><a href="MATH">Mathematics Building</a></li>
-                <li><a href="MKNA">McKenna Languages</a></li>
-                <li><a href="MUEN">Muenzinger Psychology</a></li>
-                <li><a href="MCOL">Museum Collections </a></li>
-                <li><a href="HEND">Museum of Natural History</a></li>
-                <li><a href="NTCT">Newton Court</a></li>
-                <li><a href="LIBR">Norlin Library</a></li>
-                <li><a href="W-NQ">Norlin Quadrangle</a></li>
-                <li><a href="MAIN">Old Main</a></li>
-                <li><a href="PFDC">Page Foundation Center</a></li>
-                <li><a href="PDPS">Police and Parking Services</a></li>
-                <li><a href="PORT">Porter Biosciences</a></li>
-                <li><a href="W-PF">Potts Field</a></li>
-                <li><a href="POWR">Power House</a></li>
-                <li><a href="W-PRF">Prentup Field</a></li>
-                <li><a href="RAMY">Ramaley Biology</a></li>
-                <li><a href="REED">Reed Hall</a></li>
-                <li><a href="RGNT">Regent Administrative Center</a></li>
-                <li><a href="RPRK">Regent Drive AutoPark</a></li>
-                <li><a href="LITR">Research Laboratory No. 1, Litman</a></li>
-                <li><a href="RL2">Research Laboratory No. 2, RL2</a></li>
-                <li><a href="LSRL">Research Laboratory No. 4, Life Science</a></li>
-                <li><a href="MSSC">Research Laboratory No. 6, Marine Street Science Center</a></li>
-                <li><a href="GH-3">Research Park Greenhouse</a></li>
-                <li><a href="ATLS">Roser ATLAS Center</a></li>
-                <li><a href="SLL">Science Learning Laboratory </a></li>
-                <li><a href="SWLL">Sewall Hall</a></li>
-                <li><a href="SMCT">Smiley Court</a></li>
-                <li><a href="SMTH">Smith Hall</a></li>
-                <li><a href="OBSV">Sommers-Bausch Observatory</a></li>
-                <li><a href="SPSC">Space Science Building</a></li>
-                <li><a href="SLHS">Speech, Language, and Hearing Sciences</a></li>
-                <li><a href="STTB">Stadium Ticket Building</a></li>
-                <li><a href="STRN">Stearns Towers </a></li>
-                <li><a href="REC">Student Recreation Center</a></li>
-                <li><a href="TLC">Technology Learning Center</a></li>
-                <li><a href="TB01">Temporary Building No. 1</a></li>
-                <li><a href="TB82">Temporary Building No. 82</a></li>
-                <li><a href="TRAN">Transportation Center and Annex</a></li>
-                <li><a href="UCTR">University Administrative Center</a></li>
-                <li><a href="TB19">University Administrative Center Annex</a></li>
-                <li><a href="CLUB">University Club</a></li>
-                <li><a href="UMC">University Memorial Center</a></li>
-                <li><a href="URES">University Residence</a></li>
-                <li><a href="THTR">University Theatre</a></li>
-                <li><a href="W-VL">Varsity Lake and Bridge</a></li>
-                <li><a href="VAC">Visual Arts Complex</a></li>
-                <li><a href="WARD">Wardenburg Student Health Center</a></li>
-                <li><a href="WLRD">Willard Hall</a></li>
-                <li><a href="WVN">Williams Village 2</a></li>
-                <li><a href="W-WF">Williams Village Field</a></li>
-                <li><a href="WLAW">Wolf Law</a></li>
-                <li><a href="WDBY">Woodbury Arts and Sciences </a></li>
               </ul>  
             </div>
         </div>
 
-  <div id="layer-controls" class="sidebar-section">
-    <h2><a href="#overlay-layer-controls" class="section-toggle toggle-show">Section 1</a></h2>
+        
+        
+        <div id="layer-controls" class="sidebar-section">
+          <h2><a href="#overlay-layer-controls" class="section-toggle toggle-show">Map Layers</a></h2>
+          <!-- <div id="basemap-layer-controls"></div> -->
           <div id="overlay-layer-controls" class="legend-section"></div>
-  </div>
+        </div>
+ 
+      <div id="legend" class="sidebar-section">
+          <h2>Legend</h2>
+          <div id="legend-roads" class="legend-section">
+            <h3>Roads & Paths</h3>
+            <ul>
+              <li><img src="./lib/img/legend-icons/highway.png" /><span>Highway</span> </li>
+              <li><img src="./lib/img/legend-icons/smaller-roads.png" /><span>City Roads</span> </li>
+            </ul>
+            <div class="footpaths-toggle">
+              <ul>
+                <li><img src="./lib/img/legend-icons/footway.png" /><span>Footway</span> </li>
+                <li><img src="./lib/img/legend-icons/steps.png" /><span>Steps</span> </li>
+              </ul>
+            </div>
+          </div>
 
-<div id="links">
-<h2>Section 2</h2>
-  <ul>
-    <li><a href="http://www.colorado.edu/about/visiting-campus/directions"><i class="fa fa-arrows fa-fw"></i> Directions to Campus</a></li>
+          <div id="legend-buildings" class="buildings-toggle legend-section">
+            <h3>Buildings</h3>
+            <ul>
+              <li><img src="./lib/img/legend-icons/academic.png" /><span>Academic</span> </li>
+              <li><img src="./lib/img/legend-icons/residential.png" /><span>Residential</span> </li>
+              <li><img src="./lib/img/legend-icons/administrative.png" /><span>Office</span> </li>
+              <li><img src="./lib/img/legend-icons/other.png" /><span>Other</span> </li>
+            </ul>
+          </div>
 
-    <li><a href="#embed" id="embed-link"><i class="fa fa-code fa-fw"></i> Embed this Map</a></li>
-    <li><a href="about/new-map"><i class="fa fa-question-circle fa-fw"></i> About the Map</a></li>
-    <li><a href="lib/map.pdf"><i class="fa fa-print fa-fw"></i> Printable Map (pdf)</a></li>
-    <li><a href="about/feedback"><i class="fa fa-thumbs-up fa-fw"></i> Feedback</a></li>
-  </ul>
-</div>
+          <div id="legend-parking" class="parking-toggle legend-section">
+            <h3>Parking</h3>
+            <ul>
+              <li><img src="./lib/img/legend-icons/hatch-yellow-2.png" /><span>Student</span> </li>
+              <li><img src="./lib/img/legend-icons/hatch-blue-2.png" /><span>Staff</span> </li>
+              <li><img src="./lib/img/legend-icons/hatch-pink-2.png" /><span>Public</span> </li>
+              <li><img src="./lib/img/legend-icons/hatch-green-2.png" /><span>Loading Dock</span> </li>
+              <li><img src="./lib/img/legend-icons/hatch-purple-2.png" /><span>Motorcycle</span> </li>
+              <li><img src="./lib/img/legend-icons/parking-ticket-24.png" /><span>Paid Parking Machine</span> </li>
+              <!--<li><img src="./lib/img/legend-icons/handicap-18.png" /><span>Handicap Parking</span> </li>-->
+            </ul>
+          </div>
 
-<div id="sidebar-button"></div>
-</div>
-</div>
+          <div id="legend-food" class="food-toggle legend-section">
+            <h3>Dining/Food</h3>
+            <ul>
+              <li><img src="./lib/img/legend-icons/cafe-gold-24.png" /><span>CU Cafe</span> </li>
+              <li><img src="./lib/img/legend-icons/restaurant-gold-24.png" /><span>CU Dining Hall</span> </li>
+              <li><img src="./lib/img/legend-icons/fast-food-gold-24.png" /><span>CU Grab-n-go</span> </li>
+              <li><img src="./lib/img/legend-icons/cafe-24.png" /><span>Non-CU Cafe</span> </li>
+              <li><img src="./lib/img/legend-icons/restaurant-24.png" /><span>Non-CU Restaurant</span></li>
+              <li><img src="./lib/img/legend-icons/fast-food-24.png" /><span>Non-CU Fast Food</span></li>
+            </ul>
+          </div>
+
+          <div id="legend-buses" class="buses-toggle legend-section">
+            <h3>Buses</h3>
+            <ul>
+              <li><img src="./lib/img/legend-icons/buff-bus.png" /><span>Buff Bus</span></li>
+              <li><img src="./lib/img/legend-icons/local-rtd.png" /><span>Local RTD</span></li>
+              <li><img src="./lib/img/legend-icons/regional-rtd.png" /><span>Regional RTD</span></li>
+            </ul>
+          </div>
+
+          <div id="legend-icons">
+            <div class="bike_parking-toggle legend-section">
+              <h3>Bicycles</h3>
+              <ul>    
+                <li><img src="./lib/img/legend-icons/maki/bicycle-24.png" /><span>Bike Parking</span></li>
+              </ul>
+            </div>
+            <div class="emergency_telephones-toggle legend-section">
+              <h3>Emergency</h3>
+              <ul>
+                <li><img src="./lib/img/legend-icons/emergency-telephone-24.png" /><span>Emergency Telephone</span></li>
+              </ul>
+            </div>
+          </div>
+      </div> <!-- ./legend -->
+
+
+        <div id="links">
+          <ul>
+            <li><a href="http://www.colorado.edu/about/visiting-campus/directions"><i class="fa fa-arrows fa-fw"></i> Directions to Campus</a></li>
+
+            <li><a href="#embed" id="embed-link"><i class="fa fa-code fa-fw"></i> Embed this Map</a></li>
+            <li><a href="about/new-map"><i class="fa fa-question-circle fa-fw"></i> About the Map</a></li>
+            <li><a href="lib/map.pdf"><i class="fa fa-print fa-fw"></i> Printable Map (pdf)</a></li>
+            <li><a href="about/feedback"><i class="fa fa-thumbs-up fa-fw"></i> Feedback</a></li>
+          </ul>
+        </div>
+
+
+        <div id="footer">
+			<a href="http://www.colorado.edu"><img src="./lib/img/be-boulder-black-ext.png" alt="University of Colorado Boulder" /></a>
+			<p>&copy; Regents of the University of Colorado<br>
+	        <a href="http://www.colorado.edu/about/privacy-statement">Privacy</a> &bull; <a href="http://www.colorado.edu/about/legal-trademarks">Legal &amp; Trademarks</a></p>
+	        <p class="osm-copyright">Powered by <a href="http://leafletjs.com">Leaflet</a> contributors - Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a></p>
+        </div>
+
+      </div>
+      <div id="sidebar-button"></div>
+    </div>
+
 
 <div id="map"></div>
 
@@ -281,11 +240,11 @@
 <h2>Embed Map</h2>
 <p>Copy and paste the code below to embed this map on your own site:</p>
 <input type="text" id="embed-code" /> <a href="#" id="close-embed"><i class="fa fa-times-circle"></i></a>
-</div>
+</div><!-- ./embed -->
+
+</div> <!-- ./page-->
 
 
-
-</body>
 
 
 <!-- the javascript files -->
@@ -318,5 +277,5 @@ maxZoom: 18,
 }).addTo(map);
 new L.Control.Zoom({ position: 'bottomright'}).addTo(map);
 </script>
-
+</body>
 </html>
